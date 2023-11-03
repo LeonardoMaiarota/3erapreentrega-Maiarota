@@ -1,0 +1,53 @@
+.accordion-body {
+    display: flex;
+    justify-content: space-between;
+    img {
+      border-top: 3px solid orangered;
+    }
+  }
+  .accordion-header {
+   img {
+      width: 40px;
+      height: 25px;
+   }
+  }
+  
+  .datosequipo {
+   h3 {text-align: center;}
+  }
+  
+  .tituloypilotos {
+     justify-items: center;
+  }
+  
+  /* Mediaqueris version mobile*/
+
+  @media (max-width: 480px) {
+   .accordion-body {
+      flex-direction: column;
+     
+   }
+
+   .fotoauto {
+      img {
+         width: 300px ;
+         height: 150px;
+         margin-left: 40px;
+      }
+   }   
+
+   .tituloypilotos {
+      display: flex;
+      flex-direction: column;
+      h3 {text-align: center;}
+   }
+   .nombreyfotopiloto {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      img {
+         width: 80px;
+         height: 100px;
+      }
+   }
+  }

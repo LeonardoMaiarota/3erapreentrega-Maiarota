@@ -1,0 +1,52 @@
+.maincalendario {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.calendario {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.carrera {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-bottom: 5px;
+
+    h3:hover {color: gray;}
+    
+    h3 {font-size: 30px;}
+    h4 {font-size: 25px;}
+    p {font-size: 12.5px;}
+
+    img {
+      width: 300px;
+      height: 150px;
+      padding: 10px;
+      border-top: 3px solid orangered;
+    }
+    img:hover{
+      padding: 0px ;
+    }
+}
+
+
+/* Mediaqueris version mobile*/
+
+@media (max-width: 480px) {
+  .calendario {
+    flex-direction: column;
+    align-items: center;
+  }
+  .carrera {
+    width: 100%;
+  }
+}
+
+
