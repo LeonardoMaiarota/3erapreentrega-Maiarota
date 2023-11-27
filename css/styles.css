@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "lato";
+  src: url(../assets/fuentes/Lato-Regular.ttf);
+}
+h2 {
+  font-size: 25px;
+  font-family: lato;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: lato;
+}
+
+p {
+  font-size: 15px;
+  font-family: lato;
+}
+
 body {
   display: grid;
   grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer";
@@ -84,14 +103,14 @@ footer img {
     height: 25px;
     margin-bottom: 10px;
   }
-  .textofooter {
+  footer .textofooter {
     color: white;
     font-size: 8px;
     justify-items: center;
     flex-wrap: wrap;
     text-align: center;
   }
-  .rrssfooter {
+  footer .rrssfooter {
     justify-content: space-between;
     margin-left: 0px;
   }
@@ -107,6 +126,7 @@ footer img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 10px;
   column-gap: 2px;
 }
 
@@ -204,20 +224,12 @@ footer img {
 .carrera {
   display: flex;
   flex-direction: column;
+  justify-items: center;
   align-items: center;
   margin-bottom: 5px;
 }
-.carrera h3:hover {
+.carrera h2:hover {
   color: gray;
-}
-.carrera h3 {
-  font-size: 30px;
-}
-.carrera h4 {
-  font-size: 25px;
-}
-.carrera p {
-  font-size: 12.5px;
 }
 .carrera img {
   width: 300px;
@@ -242,12 +254,50 @@ footer img {
 .mainregistrarme {
   margin-left: 10px;
 }
-.mainregistrarme label {
-  margin-bottom: 15px;
+.mainregistrarme h2 {
+  border-top: 3px solid orangered;
+}
+
+.fila_registro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.columna_registro {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 40%;
+}
+
+.checkbox {
+  margin-left: 60px;
+  margin-top: 20px;
+  align-content: center;
+  justify-content: center;
+}
+
+.boton {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Mediaqueris version mobile*/
 @media (max-width: 480px) {
+  .fila_registro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    justify-items: center;
+  }
+  .columna_registro {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
   h2 {
     font-size: 24px;
   }

@@ -1,30 +1,20 @@
 .maincalendario {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
+  @include flex-colum;
+  @include jicenter-aicenter;
 }
 
 .calendario {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
 }
 
 .carrera {
-  display: flex;
-  flex-direction: column;
-  align-items:center;
+  @include flex-colum;
+  @include jicenter-aicenter;
   margin-bottom: 5px;
-
-    h3:hover {color: gray;}
-    
-    h3 {font-size: 30px;}
-    h4 {font-size: 25px;}
-    p {font-size: 12.5px;}
-
+  h2:hover {color: gray;};
     img {
       width: 300px;
       height: 150px;
@@ -35,7 +25,6 @@
       padding: 0px ;
     }
 }
-
 
 /* Mediaqueris version mobile*/
 

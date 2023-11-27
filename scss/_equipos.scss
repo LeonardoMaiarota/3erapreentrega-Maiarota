@@ -25,9 +25,7 @@
   @media (max-width: 480px) {
    .accordion-body {
       flex-direction: column;
-     
    }
-
    .fotoauto {
       img {
          width: 300px ;
@@ -35,15 +33,12 @@
          margin-left: 40px;
       }
    }   
-
    .tituloypilotos {
-      display: flex;
-      flex-direction: column;
+      @include flex-colum;
       h3 {text-align: center;}
    }
    .nombreyfotopiloto {
-      display: flex;
-      flex-direction: row;
+      @include flex-row;
       justify-content: space-between;
       img {
          width: 80px;

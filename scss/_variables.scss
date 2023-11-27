@@ -1,0 +1,40 @@
+
+// Tipo de Letra//
+@font-face { 
+    font-family: "lato"; 
+    src:url(../assets/fuentes/Lato-Regular.ttf);}
+
+//Tamaños de letra//
+
+$subtitulo1: 25px;
+$subtitulo2: 20px;
+$texto: 15px;
+
+h2 {
+    font-size: $subtitulo1;
+    font-family: lato;}
+
+h3 {
+    font-size: $subtitulo2;
+    font-family: lato;
+}
+
+p {
+    font-size: $texto;
+    font-family: lato;
+}
+
+@mixin flex-row{
+	display:flex;
+	flex-direction:row;
+}
+
+@mixin flex-colum{
+	display:flex;
+	flex-direction:column;
+}
+
+@mixin jicenter-aicenter {
+    justify-items: center;
+    align-items: center;
+}

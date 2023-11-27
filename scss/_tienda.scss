@@ -1,14 +1,13 @@
 .tienda {
-    display: flex;
-    flex-direction: column;
+    @include flex-colum;
     justify-content: space-between;
     margin-top: 10px;
   }
 
 .productostienda {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   justify-content: space-between;
+  margin-top: 10px;
   column-gap: 2px;
 }
    .card {
@@ -16,8 +15,6 @@
     height: 28rem;
     border-radius: 10px;
    }
-
-
    .fototienda {
     width:14rem;
     height: 140rem;
@@ -27,17 +24,13 @@
 
   @media (max-width: 480px) {
     .productostienda {
-      display: flex;
-      flex-direction: column;
+      @include flex-colum;
      }
      .card {
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      height: 18rem;
-      
+      @include flex-row;
+      height: 18rem;    
      }
-
       .fototienda {
       width:14rem;
       height: 14rem;
