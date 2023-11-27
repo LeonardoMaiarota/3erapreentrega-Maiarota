@@ -327,26 +327,29 @@ footer img {
 }
 
 .resumencarrera {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
   width: 40%;
   margin: 10px;
   padding: 5px;
-  justify-items: center;
 }
 .resumencarrera iframe {
-  margin-left: 45px;
   width: 370px;
   height: 208px;
 }
 
 .proximogp {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
   width: 30%;
   margin: 10px;
   background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-  justify-items: center;
-  align-items: center;
 }
 .proximogp img {
-  margin-left: 22px;
   width: 300px;
   height: 150px;
 }
@@ -370,15 +373,24 @@ footer img {
 }
 
 /* Mediaqueris version mobile*/
+h1 {
+  text-align: center;
+}
+
 @media (max-width: 480px) {
   .contenido {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     justify-items: center;
+    align-items: center;
     margin-top: 20px;
   }
-  .contenido h2, .contenido h3 {
+  .contenido p {
+    margin: 15px;
+    justify-content: center;
+  }
+  .contenido h2, .contenido h3, .contenido p {
     text-align: center;
   }
   .resumencarrera {
@@ -388,7 +400,7 @@ footer img {
     justify-items: center;
   }
   .resumencarrera iframe {
-    margin-left: 45px;
+    margin-left: 0px;
     width: 300px;
     height: 150px;
   }
@@ -400,7 +412,7 @@ footer img {
     align-items: center;
   }
   .proximogp img {
-    margin-left: 70px;
+    margin-left: 0px;
     width: 300px;
     height: 150px;
   }
